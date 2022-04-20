@@ -7,7 +7,9 @@ import (
 )
 
 func main() {
-	tree, err := s.NewTree([]int{20, 4, 8, 21, 3, 7, 10})
+	testData := []int{20, 4, 8, 21, 3, 7, 10}
+
+	tree, err := s.NewTree(testData)
 	if err != nil {
 		fmt.Println("Error creating tree")
 		os.Exit(1)
@@ -16,5 +18,4 @@ func main() {
 
 	fmt.Printf("depth: %d\n", depth)
 	fmt.Printf("deepest: %d\n", deepest)
-
 }
